@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Art Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    } @font-face {
+        font-family: Candara;
+        src: url("Candara.ttf");
+    } h1 {
+        font: 48pt/1.4em Satisfy;
+        text-align: center;
+        text-shadow: 1px 2px 3px rgba(0,176,173,1.00);
+        margin: 24px 0;
+    } #textbox {
+        width: 1024px;
+        height: 724px;
+        margin: 0 auto;
+        background: whitesmoke;
+        box-shadow: 2px 3px 6px gainsboro;
+        border: 1px solid gainsboro;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-content: center
+    } figure {
+        margin: 24px;
+    } img, .zoom {
+        width: 350px;
+        height: 250px;
+        border: 1px solid gray;
+        box-shadow: 2px 3px 6px gray;
+        transition: transform 0.5s;
+    } figcaption {
+        font: 12pt/1.4em Candara;
+        margin-top: 3px;
+    } .zoom {
+        background: url("thumb-tulip.jpg");
+        background-size: 100%;
+        background-position: center;
+    } img:hover {
+        transform: scale(1.03);
+        transition: transform 0.5s;
+    } .zoom:hover {
+        background-size: 105%;
+        transition: background-size 0.5s;
+    }
+</style>
+</head>
+
+<body>
+    <h1>Marker Drawing Portfolio</h1>
+    <div id="textbox">
+        <!-- Leaves photo -->
+        <figure>
+			<a href="drawing_1.jpg">
+            <img src="drawing_1.jpg" />
+			</a>
+            <figcaption>
+            Marker Drawing 1
+            </figcaption>
+        </figure>
+		 <figure>
+			<a href="drawing_2.jpg">
+            <img src="drawing_2.jpg" />
+			</a>
+            <figcaption>
+            Marker Drawing 2
+            </figcaption>
+        </figure>
+		 <figure>
+			<a href="drawing_3.jpg">
+            <img src="drawing_3.jpg"/>
+			</a>
+            <figcaption>
+            Marker Drawing 3
+            </figcaption>
+        </figure>
+    </div>
+</body>
+</html>
